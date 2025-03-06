@@ -9,15 +9,14 @@
 
 </head>
 <body>
-    
-
+    <!--navbar-->
     <nav class="bg-gray-800 p-3 border-b border-gray-700 relative flex items-center justify-between rounded-4xl">
         <!-- Logo -->
         <div>
             <img class="h-16 w-32" src="./Assets/image/logo.jpg">
         </div>
         
-        <!-- Navigation Links -->
+        <!-- Nav Links -->
         <ul class="flex space-x-3">
             <li class="text-white hover:underline"><a href="index.html">Home</a></li>
             <li class="text-white hover:underline"><a href="#">Books</a></li>
@@ -35,8 +34,6 @@
             document.getElementById('dropdownMenu').classList.toggle('hidden');
         });
     </script>
-
-
 
 <!--section 02-->
 <section class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('Assets/image/pexels-cottonbro-4855380.jpg');">
@@ -56,12 +53,9 @@
     </div>
 </section>
 
-        <!--section 03-->
-      
-      
-
-<!--section 04-->
-<section id="portfolio" class="h-screen bg-gradient-to-b from-blue-200 to-blue-500 py-10">
+       
+<!--section 03-->
+<section id="" class="h-screen bg-gradient-to-b from-blue-200 to-blue-500 py-10">
     <div class="text-center space-y-4">
         <button class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg hover:scale-105 transition-transform">Best Sellers</button>
         <h1 class="font-bold text-5xl text-gray-800 drop-shadow-lg">This Year's Top Sellers</h1>
@@ -95,10 +89,55 @@
         </div>
     </div>
 </section>
+ <!--section 03-->
+ 
+<section id="" class=" bg-gradient-to-b from-blue-100 to-blue-300 py-10">
+    <div class="grid justify-items-center space-y-4 pt-10 pb-10">
+        <button class="text-purple-500 font-semibold text-lg">Authors</button>
+        <h1 class="font-bold text-white text-2xl">Most Popular Authors!</h1>
+    </div>
+    <div class="grid justify-items-center">
+        <div class="flex flex-wrap justify-center gap-6">
+            <!-- Author 1 -->
+            <div class="card bg-white shadow-lg p-4 rounded-lg" style="width: 200px;">
+                <img class="card-img-top rounded-full w-70 h-80 mx-auto" src="Assets/image/authors1.jpg">
+                <div class="text-center mt-3">
+                    <h2 class="font-semibold text-lg">Adam Grant</h2>
+                    <p class="text-purple-500">Psychologist</p>
+                </div>
+            </div>
+            <!-- Author 2 -->
+            <div class="card bg-white shadow-lg p-4 rounded-lg" style="width: 200px;">
+                <img class="card-img-top rounded-full w-70 h-80 mx-auto" src="Assets/image/authors2.jpg">
+                <div class="text-center mt-3">
+                    <h2 class="font-semibold text-lg">J.K. Dowlink</h2>
+                    <p class="text-purple-500">British Author</p>
+                </div>
+            </div>
+            <!-- Author 3 -->
+            <div class="card bg-white shadow-lg p-4 rounded-lg" style="width: 200px;">
+                <img class="card-img-top rounded-full w-70 h-80 mx-auto" src="Assets/image/authors3.jpg">
+                <div class="text-center mt-3">
+                    <h2 class="font-semibold text-lg">Dan Brown</h2>
+                    <p class="text-purple-500">Doctor</p>
+                </div>
+            </div>
+            <!-- Author 4 -->
+            <div class="card bg-white shadow-lg p-4 rounded-lg" style="width: 200px;">
+                <img class="card-img-top rounded-full w-70 h-80 mx-auto" src="Assets/image/authors4.jpg">
+                <div class="text-center mt-3">
+                    <h2 class="font-semibold text-lg">William</h2>
+                    <p class="text-purple-500">Psychologist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!--section 05-->
+       <section class=" bg-gradient-to-b from-blue-100 to-blue-300 py-10">
         <div class="grid justify-items-center space-y-6 pt-12 px-4 md:px-8">
-            <p class="text-sm text-orange-500 font-semibold uppercase tracking-wide">Special Offers</p>
+            <p class="text-sm text-purple-500 font-semibold uppercase tracking-wide">Special Offers</p>
             <h2 class="text-2xl font-extrabold text-gray-800 mt-2 text-center">Get 20% Off Your First Order!</h2>
             
             <div class="mt-6 flex flex-col items-center">
@@ -112,97 +151,56 @@
                 </button>
             </div>
         </div>
-        
+    </section>
 <!--section 06-->
-<footer class="mt-12 h-80 bg-gray-800 text-white">
-    <div class="mx-auto flex space-x-6 mt-12 space-y-12">
-<div class="w-1/4">
-<div class="flex mt-8">
-<img  class="h-30 w-40"src="./Assets/image/logo.jpg">
-</div>
-<p>"Be who you are and say what<br>you feel,because those who<br>mind don't matter,and those<br>who matter don't mind."</p>
-</div>
+<footer class="mt-12 h-auto bg-gray-800 text-white">
+    <div class="mx-auto flex flex-wrap justify-between space-y-12 px-6 py-12">
+        <div class="w-full sm:w-1/4 text-center sm:text-left">
+            <div class="flex justify-center sm:justify-start mt-8">
+                <img class="h-30 w-40" src="./Assets/image/logo.jpg" alt="Logo">
+            </div>
+            <p class="mt-4 text-gray-400">
+                "Be who you are and say what<br>you feel, because those who<br>mind don't matter, and those<br>who matter don't mind."
+            </p>
+        </div>
 
-<div class="w-1/4">
-    <h1 class="font-bold mt-10">Menu</h1>
-    <ul type="point">
-        <li><span class="text-orange-500"></span>
-            <a href="#">> Home</a>
-        </li>
-        <ul type="point">
-            <li><span class="text-orange-500"></span>
-                <a href="#">> About</a>
-            </li>
-            <ul type="point">
-                <li><span class="text-orange-500"></span>
-                    <a href="#">> Collections</a>
-                </li>
+        <!-- Menu Section -->
+        <div class="w-full sm:w-1/4">
+            <h1 class="font-bold text-lg text-orange-500 mt-10">Menu</h1>
+            <ul class="space-y-2 text-gray-300">
+                <li><a href="#">> Home</a></li>
+                <li><a href="#">> About</a></li>
+                <li><a href="#">> Collections</a></li>
+                <li><a href="#">> Categories</a></li>
+                <li><a href="#">> Tags</a></li>
+            </ul>
+        </div>
 
-                <ul type="point">
-                    <li><span class="text-orange-500"></span>
-                        <a href="#">> Categories</a>
-                    </li>
-    
-                    <ul type="point">
-                        <li><span class="text-orange-500"></span>
-                            <a href="#">> Tags</a>
-                        </li>
-    </ul>
-</div>
-<div class="w-1/4">
-    <h1 class="font-bold mt-10">Support</h1>
-    <ul type="point">
-        <li><span class="text-orange-500"></span>
-            <a href="#">> FAQs</a>
-        </li>
-        <ul type="point">
-            <li><span class="text-orange-500"></span>
-                <a href="#">> Terms & Conditions</a>
-            </li>
-            <ul type="point">
-                <li><span class="text-orange-500"></span>
-                    <a href="#">> Privacy Policy</a>
-                </li>
+        <!-- Support Section -->
+        <div class="w-full sm:w-1/4">
+            <h1 class="font-bold text-lg text-orange-500 mt-10">Support</h1>
+            <ul class="space-y-2 text-gray-300">
+                <li><a href="#">> FAQs</a></li>
+                <li><a href="#">> Terms & Conditions</a></li>
+                <li><a href="#">> Privacy Policy</a></li>
+                <li><a href="#">> Request a Book</a></li>
+                <li><a href="#">> DMCA Notice</a></li>
+            </ul>
+        </div>
 
-                <ul type="point">
-                    <li><span class="text-orange-500"></span>
-                        <a href="#">> Request a Book</a>
-                    </li>
-    
-                    <ul type="point">
-                        <li><span class="text-orange-500"></span>
-                            <a href="#">> DMCA Notice</a>
-                        </li>
-    </ul>
-</div>
-<div class="w-1/4">
-    <h1 class="font-bold mt-10">About Us</h1>
-    <ul type="point">
-        <li><span class="text-orange-500"></span>
-            <a href="#">> About Us</a>
-        </li>
-        <ul type="point">
-            <li><span class="text-orange-500"></span>
-                <a href="#">> Partners</a>
-            </li>
-            <ul type="point">
-                <li><span class="text-orange-500"></span>
-                    <a href="#">> Features</a>
-                </li>
-
-                <ul type="point">
-                    <li><span class="text-orange-500"></span>
-                        <a href="#">> Affiliate</a>
-                    </li>
-    
-                    <ul type="point">
-                        <li><span class="text-orange-500"></span>
-                            <a href="#">> Contact Us</a>
-                        </li>
-    </ul>
-</div>
-
+        <!-- About Us Section -->
+        <div class="w-full sm:w-1/4">
+            <h1 class="font-bold text-lg text-orange-500 mt-10">About Us</h1>
+            <ul class="space-y-2 text-gray-300">
+                <li><a href="#">> About Us</a></li>
+                <li><a href="#">> Partners</a></li>
+                <li><a href="#">> Features</a></li>
+                <li><a href="#">> Affiliate</a></li>
+                <li><a href="#">> Contact Us</a></li>
+            </ul>
+        </div>
     </div>
 </footer>
+
 </body>
 </html>

@@ -4,33 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up Form</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-  
+
     <div>
         <form id="signupForm">
-            <section class=" bg-gradient-to-b from-blue-100 to-blue-300 py-8 px-6">
+            <section class="bg-gradient-to-b from-blue-100 to-blue-300 py-8 px-6">
                 <div class="grid justify-items-center space-y-6 pt-12 px-4 md:px-8">
                     <h1 class="font-bold text-6xl text-purple-500">Sign Up!</h1>
-                    <input id="name" class="border-2 border-gray-100" type="text" placeholder="Your Name"><br>
-                    <input id="email" class="border-2 border-gray-100" type="text" placeholder="Your Email"><br>
-                    <input id="password" class="border-2 border-gray-100" type="text" placeholder="Password"><br>
-                    <button id="submit"
-                        class="mt-6 rounded-md text-white px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg">Sign
-                        Up</button>
-               </div>
-            </form>
-        <p id="savedName"></p>
-        <p id="savedEmail"></p>
+                    <input id="name" class="border-2 border-gray-300 px-4 py-2 rounded" type="text" placeholder="Your Name"><br>
+                    <input id="email" class="border-2 border-gray-300 px-4 py-2 rounded" type="email" placeholder="Your Email"><br>
+                    <input id="password" class="border-2 border-gray-300 px-4 py-2 rounded" type="password" placeholder="Password"><br>
+                    <button id="submit" type="submit"
+                        class="mt-6 rounded-lg text-white px-6 py-3 bg-purple-600 hover:bg-purple-700">
+                        Sign Up
+                    </button>
+                </div>
+            
+        </form>
 
-        <button id="clearData"
-            class="mt-26 rounded-md text-white w-20 h-10 bg-purple-600 hover:bg-purple-700 rounded-lg ml-213">Clear</button>
+        <div class="text-center mt-6">
+            <p id="savedName" class="text-lg font-medium"></p>
+            <p id="savedEmail" class="text-lg font-medium"></p>
 
+            <button id="clearData"
+                class="mt-6 rounded-lg text-white w-24 h-10 bg-purple-600 hover:bg-purple-700">
+                Clear
+            </button>
+        </section>
+        </div>
     </div>
-    </section>
+
     <script src="./script.js"></script>
 </body>
 

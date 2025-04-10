@@ -11,6 +11,8 @@
 <body>
     <!--navbar-->
     <nav class="bg-gray-800 p-4 border-b border-gray-700 relative flex items-center justify-between rounded-3xl shadow-md">
+        <button onclick="toggleDarkMode()" class="text-white border px-4 py-1 rounded-md">Toggle Dark Mode</button>
+
         <!-- Logo -->
         <div>
             <img class="h-16 w-32" src="./Assets/image/logo.jpg">
@@ -258,6 +260,26 @@ function searchBook() {
         alert("Please enter a book name.");
     }
 }
+window.addEventListener("scroll", () => {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 50) {
+        nav.classList.add("bg-gray-900");
+    } else {
+        nav.classList.remove("bg-gray-900");
+    }
+});
+window.addEventListener("load", () => {
+    if (!localStorage.getItem("visited")) {
+        alert("👋 Welcome to BookZone!");
+        localStorage.setItem("visited", "yes");
+    }
+});
+
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+}
+
 
 </script>
 </body>

@@ -22,11 +22,11 @@
             <li class="text-white hover:underline transition px-4 py-2"><a href="#books">Books</a></li>
             <li class="text-white hover:underline transition px-4 py-2"><a href="#collection">Collections</a></li>
             <li class="text-white hover:underline transition px-4 py-2"><a href="#category">Categories</a></li>
-            <li class="text-purple-500 hover:underline transition px-4 py-2"><a href="#signup">Sign Up</a></li>
-        </ul>
+       
+        
         <button>
-                <a href="./signup.html" class="block px-4 py-2 text-white-500 hover:bg-purple-500 hover">Sign Up</a></button>
-    
+                <a href="./signup.html" class="block px-4 py-2 text-white hover:bg-purple-500 hover">Sign Up</a></button>
+        </ul>
         </div>
     </nav>
 
@@ -41,51 +41,66 @@
             It differs from the common idea of an e-book.
         </p>
         <div class="flex items-center space-x-2 bg-white rounded-lg p-2 shadow-lg">
-            <input type="text" placeholder="Search for Books" 
-                   class="border-none py-2 px-4 w-80 text-gray-700 focus:outline-none rounded-md">
-            <button class="rounded-md text-white px-4 py-2 bg-purple-500 hover:bg-purple-600 transition-all">
-                Search
-            </button>
+       
+                 
+            <input type="text" placeholder="Search for Books" class="border-none py-2 px-4 w-80 text-gray-700 focus:outline-none rounded-md" id="searchInput">
+<button onclick="searchBook()" class="rounded-md text-white px-4 py-2 bg-purple-500 hover:bg-purple-600 transition-all">Search</button>
+
         </div>
     </div>
 </section>
 
        
 <!--section 03-->
+
+<!--books section -->
 <section id="books" class="h-screen bg-gradient-to-b from-blue-200 to-blue-500 py-10">
-    <div class="text-center space-y-4">
-        <button class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg hover:scale-105 transition-transform">Best Sellers</button>
-        <h1 class="font-bold text-5xl text-gray-800 drop-shadow-lg">This Year's Top Sellers</h1>
+  <div class="text-center space-y-4">
+    <button class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg hover:scale-105 transition-transform">Best Sellers</button>
+    <h1 class="font-bold text-5xl text-gray-800 drop-shadow-lg">This Year's Top Sellers</h1>
+  </div>
+
+  <div class="flex flex-col items-center space-y-10 pt-10">
+
+
+    <div class="flex flex-wrap justify-center gap-6 px-10">
+      <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
+      
+        <img class="h-60 w-60 object-cover" src="./Assets/image/book1.jpg" alt="Book 1">
+      </div>
+
+      <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
+       
+        <img class="h-60 w-60 object-cover" src="./Assets/image/book2.jpg" alt="Book 2">
+      </div>
+
+      <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
+       
+        <img class="h-60 w-60 object-cover" src="./Assets/image/book3.jpg" alt="Book 3">
+      </div>
     </div>
 
-    <div class="flex flex-col items-center space-y-10 pt-10">
-        <div class="flex flex-wrap justify-center gap-6 px-10">
-            <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
-                <img class="h-60 w-60 object-cover" src="./Assets/image/book1.jpg" alt="Book 1">
-            </div>
-            <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
-                <img class="h-60 w-60 object-cover" src="./Assets/image/book2.jpg" alt="Book 2">
-            </div>
-            <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
-                <img class="h-60 w-60 object-cover" src="./Assets/image/book3.jpg" alt="Book 3">
-            </div>
-        </div>
 
-        <div class="flex flex-wrap justify-center gap-6 px-10">
-            <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
-                <img class="h-60 w-60 object-cover" src="./Assets/image/book4.jpg" alt="Book 4">
-            </div>
-            <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
-                <img class="h-60 w-60 object-cover" src="./Assets/image/book5.jpg" alt="Book 5">
-            </div>
-            <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
-                <a href="">
-                    <img class="h-60 w-60 object-cover" src="./Assets/image/book6.jpg" alt="Book 6">
-                </a>
-            </div>
-        </div>
+    <div class="flex flex-wrap justify-center gap-6 px-10">
+      <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
+        
+        <img class="h-60 w-60 object-cover" src="./Assets/image/book4.jpg" alt="Book 4">
+      </div>
+      <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
+        
+
+        <img class="h-60 w-60 object-cover" src="./Assets/image/book5.jpg" alt="Book 5">
+      </div>
+      <div class="border-4 border-white rounded-lg bg-white p-4 shadow-md">
+    
+          <img class="h-60 w-60 object-cover hover:scale-105 transition-transform" src="./Assets/image/book6.jpg" alt="Book 6">
+        </a>
+      </div>
     </div>
+  </div>
 </section>
+
+
  <!--section 03-->
  
 <section id="category" class=" bg-gradient-to-b from-blue-100 to-blue-300 py-10">
@@ -142,13 +157,40 @@
                     An online book is a resource in book-like form that is only available<br>
                     to read on the internet. It differs from the common idea of an e-book.
                 </p>
+              
                 
-                <button class="mt-6 rounded-md text-white px-6 py-3 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transform hover:">
+              
+                
+                <button onclick="showModal()" class="mt-6 rounded-md text-white px-6 py-3 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transform hover:">
                     Purchase Now
-                </button>
+                </button> 
+                 <div id="Model" class="hidden"></div>
+                
+
+
             </div>
         </div>
     </section>
+
+    <div id="purchaseModal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-80">
+            <h3 class="text-xl font-bold text-gray-800 text-center">Enter Your Details</h3>
+            
+            <form id="purchaseForm" class="mt-4">
+                <label for="name" class="block text-gray-700">Name</label>
+                <input id="name" type="text" class="border-2 border-gray-300 px-4 py-2 w-full rounded mt-2" placeholder="Your Name" required>
+                
+                <label for="contact" class="block text-gray-700 mt-4">Contact Number</label>
+                <input id="contact" type="text" class="border-2 border-gray-300 px-4 py-2 w-full rounded mt-2" placeholder="Your Contact Number" required>
+    
+                <button type="submit" class="mt-6 rounded-md text-white px-6 py-3 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 w-full">
+                    Submit
+                </button>
+            </form>
+            
+            <button id="closeModal" class="mt-4 text-purple-600 hover:underline">Close</button>
+        </div>
+    </div>
 <!--section 06-->
 <footer class="mt-12 h-auto bg-gray-800 text-white">
     <div class="mx-auto flex flex-wrap justify-between space-y-12 px-6 py-12">
@@ -198,6 +240,25 @@
         </div>
     </div>
 </footer>
+<script>
+function showModal() {
+    document.getElementById('purchaseModal').classList.remove('hidden');
+}
 
+document.getElementById('closeModal').addEventListener('click', function () {
+    document.getElementById('Modal').classList.add('hidden');
+});
+
+
+function searchBook() {
+    const query = document.getElementById("searchInput").value;
+    if (query.trim() !== "") {
+        alert("You searched for: " + query);
+    } else {
+        alert("Please enter a book name.");
+    }
+}
+
+</script>
 </body>
 </html>
